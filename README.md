@@ -1,6 +1,6 @@
 # Joel-y
 
-![Joel-y](source/pngs/joel-y-large-transparent.png)
+<img src="source/pngs/joel-y-large-transparent.png" alt="Joel-y" width="220">
 
 Joel-y is a Codex custom pet asset package.
 
