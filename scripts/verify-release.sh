@@ -55,4 +55,45 @@ if [[ ! -f pet/joel-y/pet.json || ! -f pet/joel-y/spritesheet.webp ]]; then
   exit 1
 fi
 
+if [[ ! -f releases/index.json ]]; then
+  echo "Missing releases/index.json." >&2
+  exit 1
+fi
+
+latest_release="$(jq -r '.latest' releases/index.json)"
+if [[ -z "$latest_release" || "$latest_release" == "null" ]]; then
+  echo "releases/index.json must define latest." >&2
+  exit 1
+fi
+
+if ! jq -e --arg id "$latest_release" '.releases[] | select(.id == $id)' releases/index.json >/dev/null; then
+  echo "Latest release '$latest_release' is not listed in releases/index.json." >&2
+  exit 1
+fi
+
+while IFS=$'\t' read -r release_id release_path; do
+  if [[ -z "$release_id" || -z "$release_path" ]]; then
+    echo "Invalid release entry in releases/index.json." >&2
+    exit 1
+  fi
+
+  if [[ "$release_path" != releases/* ]]; then
+    echo "Release '$release_id' path must live under releases/: $release_path" >&2
+    exit 1
+  fi
+
+  for required in pet.json spritesheet.webp contact-sheet.png release.json; do
+    if [[ ! -f "$release_path/$required" ]]; then
+      echo "Release '$release_id' is missing $release_path/$required." >&2
+      exit 1
+    fi
+  done
+
+  manifest_id="$(jq -r '.id' "$release_path/release.json")"
+  if [[ "$manifest_id" != "$release_id" ]]; then
+    echo "Release '$release_id' manifest id mismatch: $manifest_id" >&2
+    exit 1
+  fi
+done < <(jq -r '.releases[] | [.id, .path] | @tsv' releases/index.json)
+
 echo "Joel-y release check passed."

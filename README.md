@@ -29,7 +29,7 @@ After that, update Joel-y with:
 ```bash
 cd joel-y
 git pull
-./scripts/install-or-update.sh
+./scripts/install-or-update.sh --latest
 ```
 
 This also installs the `$joel-y` Codex skill into `~/.codex/skills/joel-y`.
@@ -41,11 +41,20 @@ Use $joel-y to update my Joel-y pet to the latest version.
 Use $joel-y to switch Joel-y to <release-tag>.
 ```
 
+List and install a specific local Joel-y release:
+
+```bash
+./scripts/install-or-update.sh --list
+./scripts/install-or-update.sh --release baseline
+./scripts/install-or-update.sh --release golf-2026-06-25
+```
+
 Restart Codex if Joel-y does not refresh immediately.
 
 ## Repo Layout
 
 - `pet/joel-y/`: Ready-to-install Codex pet package.
+- `releases/`: Immutable versioned Joel-y pet packages.
 - `source/pngs/`: Editable/exported PNG frames used to build the pet.
 - `artifacts/`: Review artifacts such as contact sheets.
 - `docs/`: Notes for adding future variants.
@@ -77,9 +86,11 @@ When adding new primitives, outfits, or places:
 3. Regenerate `pet/joel-y/spritesheet.webp`; this is required for every released variant.
 4. Refresh `artifacts/contact-sheet.png` for review.
 5. Update `CHANGELOG.md`.
-6. Run `scripts/verify-release.sh origin/main`.
-7. Commit the source frames, generated pet files, and review artifact together.
-8. Open a PR; do not push directly to `main`.
-9. Send the team an update using `docs/templates/team-announcement.md` after merge.
+6. Add an immutable release under `releases/<release-id>/` with `pet.json`, `spritesheet.webp`, `contact-sheet.png`, and `release.json`.
+7. Update `releases/index.json`.
+8. Run `scripts/verify-release.sh origin/main`.
+9. Commit the source frames, generated pet files, versioned release package, and review artifact together.
+10. Open a PR; do not push directly to `main`.
+11. Send the team an update using `docs/templates/team-announcement.md` after merge.
 
 For a step-by-step publishing flow, use `docs/release-checklist.md`.
