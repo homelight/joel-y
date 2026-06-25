@@ -1,0 +1,11 @@
+{
+  "id": "golf-with-club-2026-06-25",
+  "displayName": "Joel-y Golf With Club",
+  "description": "Joel-y in full golf gear with a readable golf club prop.",
+  "createdAt": "2026-06-25",
+  "petJson": "pet.json",
+  "spritesheet": "spritesheet.webp",
+  "contactSheet": "contact-sheet.png",
+  "sourceVariant": "source/variants/golf-with-club/joel-y-golf-with-club-chroma.png",
+  "tags": ["golf", "club", "outfit", "active"]
+}
