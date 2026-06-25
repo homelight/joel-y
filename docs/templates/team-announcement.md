@@ -1,4 +1,4 @@
-# Joel-y Update
+# Joel-y Update Template
 
 Joel-y has a new update: `<short summary>`.
 
