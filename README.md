@@ -6,6 +6,13 @@ Joel-y is a Codex custom pet asset package.
 
 The repo keeps the installable Codex pet files alongside source PNG frames and reference artifacts so Joel-y can be updated over time with new primitives, outfits, expressions, and places.
 
+## Latest Variant
+
+<img src="source/variants/golf/joel-y-golf-transparent.png" alt="Joel-y golf outfit" width="220">
+
+- Golf outfit source: `source/variants/golf/joel-y-golf-transparent.png`
+- Release notes: `docs/releases/2026-06-25-golf-outfit.md`
+
 ## Install Or Update
 
 Clone the repo once:
