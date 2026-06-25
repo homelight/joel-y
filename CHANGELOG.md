@@ -10,7 +10,8 @@ All notable Joel-y updates should be recorded here.
 
 - Added the first Joel-y variant: golf outfit.
 - Added raw chroma-key and transparent source images under `source/variants/golf/`.
-- Documented the golf outfit as the first recurring variant primitive.
+- Regenerated `pet/joel-y/spritesheet.webp` so the golf outfit is now the active installable Joel-y pet.
+- Refreshed `artifacts/contact-sheet.png` for review.
 
 ## 2026-06-25
 
