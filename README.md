@@ -6,12 +6,33 @@ Joel-y is a Codex custom pet asset package.
 
 The repo keeps the installable Codex pet files alongside source PNG frames and reference artifacts so Joel-y can be updated over time with new primitives, outfits, expressions, and places.
 
+## Install Or Update
+
+Clone the repo once:
+
+```bash
+git clone https://github.com/homelight/joel-y.git
+cd joel-y
+./scripts/install-or-update.sh
+```
+
+After that, update Joel-y with:
+
+```bash
+cd joel-y
+git pull
+./scripts/install-or-update.sh
+```
+
+Restart Codex if Joel-y does not refresh immediately.
+
 ## Repo Layout
 
 - `pet/joel-y/`: Ready-to-install Codex pet package.
 - `source/pngs/`: Editable/exported PNG frames used to build the pet.
 - `artifacts/`: Review artifacts such as contact sheets.
 - `docs/`: Notes for adding future variants.
+- `scripts/`: Install and update helpers.
 
 ## Install Locally
 
@@ -37,4 +58,8 @@ When adding new primitives, outfits, or places:
 2. Add a short note under `docs/variants.md`.
 3. Regenerate `pet/joel-y/spritesheet.webp` and update `pet/joel-y/pet.json` if states or atlas dimensions change.
 4. Refresh `artifacts/contact-sheet.png` for review.
-5. Commit the source frames, generated pet files, and review artifact together.
+5. Update `CHANGELOG.md`.
+6. Commit the source frames, generated pet files, and review artifact together.
+7. Send the team an update using `docs/templates/team-announcement.md`.
+
+For a step-by-step publishing flow, use `docs/release-checklist.md`.
