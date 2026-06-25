@@ -9,18 +9,11 @@ Use this file as the running index for future Joel-y updates.
 
 ## Ideas
 
+- Golf course location.
 - Beach location.
 - Seasonal outfits.
 - HomeLight-themed accessories.
 - Additional expressions and work states.
-
-## Golf Outfit
-
-- Date: 2026-06-25
-- Source: `source/variants/golf/joel-y-golf-transparent.png`
-- Raw chroma source: `source/variants/golf/joel-y-golf-chroma.png`
-- Notes: Keeps Joel-y's blond hair, sunglasses, face, and sticker-like illustration style while swapping in a clean golf polo, vest, glove, golf shoes, and club.
-- Next step: Use this as the identity reference for a full golf-course or golf-outfit animated atlas if we want Codex to run the golf Joel-y variant as the active pet.
 
 ## Variant Checklist
 
