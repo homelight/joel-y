@@ -9,8 +9,8 @@ Joel-y's first variant update adds a golf outfit inspired by today's round.
 
 ## Notes
 
-- This update adds a reviewable source primitive, not a replacement animated atlas.
-- To make golf Joel-y the active Codex pet, regenerate the full 9-state `pet/joel-y/spritesheet.webp` using this image as the identity reference.
+- This update introduced the golf outfit source primitive.
+- Future outfit/place/primitive releases must also regenerate the full 9-state `pet/joel-y/spritesheet.webp` before merge so `git pull && ./scripts/install-or-update.sh` updates the actual Codex pet.
 
 ## Team Announcement
 
