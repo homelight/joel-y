@@ -1,0 +1,4 @@
+interface:
+  display_name: "Joel-y"
+  short_description: "Install or switch Joel-y pet releases."
+  default_prompt: "Use $joel-y to update my Joel-y pet to the latest version."
