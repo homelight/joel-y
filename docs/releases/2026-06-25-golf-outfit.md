@@ -6,10 +6,12 @@ Joel-y's first variant update adds a golf outfit inspired by today's round.
 
 - Transparent golf outfit source image: `source/variants/golf/joel-y-golf-transparent.png`
 - Raw chroma-key source image: `source/variants/golf/joel-y-golf-chroma.png`
+- Active golf outfit spritesheet: `pet/joel-y/spritesheet.webp`
+- Updated review contact sheet: `artifacts/contact-sheet.png`
 
 ## Notes
 
-- This update introduced the golf outfit source primitive.
+- This update makes golf Joel-y the active installable Codex pet.
 - Future outfit/place/primitive releases must also regenerate the full 9-state `pet/joel-y/spritesheet.webp` before merge so `git pull && ./scripts/install-or-update.sh` updates the actual Codex pet.
 
 ## Team Announcement

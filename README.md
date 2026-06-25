@@ -10,7 +10,7 @@ The repo keeps the installable Codex pet files alongside source PNG frames and r
 
 <img src="source/variants/golf/joel-y-golf-transparent.png" alt="Joel-y golf outfit" width="220">
 
-- Active installable pet: `pet/joel-y/spritesheet.webp`
+- Active installable pet: golf outfit Joel-y in `pet/joel-y/spritesheet.webp`
 - Every outfit, place, or primitive variant must regenerate the active spritesheet before release.
 - Release notes: `docs/releases/2026-06-25-golf-outfit.md`
 
