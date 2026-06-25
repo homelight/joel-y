@@ -32,6 +32,15 @@ git pull
 ./scripts/install-or-update.sh
 ```
 
+This also installs the `$joel-y` Codex skill into `~/.codex/skills/joel-y`.
+
+After installing the skill, you can ask Codex:
+
+```text
+Use $joel-y to update my Joel-y pet to the latest version.
+Use $joel-y to switch Joel-y to <release-tag>.
+```
+
 Restart Codex if Joel-y does not refresh immediately.
 
 ## Repo Layout
@@ -41,6 +50,7 @@ Restart Codex if Joel-y does not refresh immediately.
 - `artifacts/`: Review artifacts such as contact sheets.
 - `docs/`: Notes for adding future variants.
 - `scripts/`: Install and update helpers.
+- `skills/joel-y/`: Codex skill for installing latest or specific Joel-y releases.
 
 ## Install Locally
 
