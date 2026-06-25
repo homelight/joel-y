@@ -1,0 +1,11 @@
+{
+  "id": "golf-2026-06-25",
+  "displayName": "Joel-y Golf",
+  "description": "Joel-y in a clean golf outfit.",
+  "createdAt": "2026-06-25",
+  "petJson": "pet.json",
+  "spritesheet": "spritesheet.webp",
+  "contactSheet": "contact-sheet.png",
+  "sourceVariant": "source/variants/golf/joel-y-golf-transparent.png",
+  "tags": ["golf", "outfit", "active"]
+}

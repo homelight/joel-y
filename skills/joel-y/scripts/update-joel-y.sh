@@ -8,19 +8,22 @@ DEFAULT_REPO_DIR="$CODEX_ROOT/joel-y-repo"
 REPO_DIR=""
 REF="main"
 MODE="latest"
+RELEASE_ID=""
 
 usage() {
   cat <<'USAGE'
 Usage:
   update-joel-y.sh --latest [--repo-dir PATH]
+  update-joel-y.sh --release RELEASE_ID [--repo-dir PATH]
   update-joel-y.sh --ref REF [--repo-dir PATH]
   update-joel-y.sh --list [--repo-dir PATH]
   update-joel-y.sh --status
 
 Options:
-  --latest         Install the latest Joel-y from origin/main.
-  --ref REF        Install a specific tag, branch, or commit.
-  --list           List recent tags and remote branches.
+  --latest         Install the release marked latest from origin/main.
+  --release ID     Install a specific versioned release from releases/index.json.
+  --ref REF        Install latest from a specific git tag, branch, or commit.
+  --list           List versioned releases, tags, and remote branches.
   --status         Show installed Joel-y metadata.
   --repo-dir PATH  Use or clone the Joel-y repo at PATH.
   --help           Show this help.
@@ -37,6 +40,11 @@ while [[ $# -gt 0 ]]; do
     --ref)
       MODE="ref"
       REF="${2:?Missing value for --ref}"
+      shift 2
+      ;;
+    --release)
+      MODE="release"
+      RELEASE_ID="${2:?Missing value for --release}"
       shift 2
       ;;
     --list)
@@ -97,8 +105,24 @@ fi
 cd "$REPO_DIR"
 git fetch --tags origin
 
+if [[ "$MODE" == "latest" ]]; then
+  git checkout main
+  git pull --ff-only origin main
+elif [[ "$MODE" == "ref" ]]; then
+  git checkout --detach "$REF"
+fi
+
+RELEASE_INDEX="$REPO_DIR/releases/index.json"
+if [[ ! -f "$RELEASE_INDEX" ]]; then
+  echo "Missing release index: $RELEASE_INDEX" >&2
+  exit 1
+fi
+
 if [[ "$MODE" == "list" ]]; then
-  echo "Tags:"
+  echo "Versioned releases:"
+  jq -r '.releases[] | "\(.id)\t\(.displayName)\t\(.description)"' "$RELEASE_INDEX"
+  echo
+  echo "Git tags:"
   git tag --sort=-creatordate | head -20
   echo
   echo "Branches:"
@@ -106,26 +130,33 @@ if [[ "$MODE" == "list" ]]; then
   exit 0
 fi
 
-if [[ "$MODE" == "latest" ]]; then
-  git checkout main
-  git pull --ff-only origin main
-else
-  git checkout --detach "$REF"
+if [[ "$MODE" == "latest" || "$MODE" == "ref" ]]; then
+  RELEASE_ID="$(jq -r '.latest' "$RELEASE_INDEX")"
 fi
 
-SOURCE_DIR="$REPO_DIR/pet/$PET_ID"
+SOURCE_REL="$(jq -r --arg id "$RELEASE_ID" '.releases[] | select(.id == $id) | .path' "$RELEASE_INDEX")"
+if [[ -z "$SOURCE_REL" || "$SOURCE_REL" == "null" ]]; then
+  echo "Unknown Joel-y release: $RELEASE_ID" >&2
+  echo "Available releases:" >&2
+  jq -r '.releases[] | "- \(.id)"' "$RELEASE_INDEX" >&2
+  exit 1
+fi
+
+SOURCE_DIR="$REPO_DIR/$SOURCE_REL"
 TARGET_ROOT="$CODEX_ROOT/pets"
 TARGET_DIR="$TARGET_ROOT/$PET_ID"
 
-if [[ ! -f "$SOURCE_DIR/pet.json" || ! -f "$SOURCE_DIR/spritesheet.webp" ]]; then
-  echo "Ref '$REF' does not contain a complete Joel-y pet package." >&2
-  echo "Expected $SOURCE_DIR/pet.json and $SOURCE_DIR/spritesheet.webp" >&2
+if [[ ! -f "$SOURCE_DIR/pet.json" || ! -f "$SOURCE_DIR/spritesheet.webp" || ! -f "$SOURCE_DIR/release.json" || ! -f "$SOURCE_DIR/contact-sheet.png" ]]; then
+  echo "Release '$RELEASE_ID' is incomplete." >&2
+  echo "Expected pet.json, spritesheet.webp, contact-sheet.png, and release.json in $SOURCE_DIR" >&2
   exit 1
 fi
 
 mkdir -p "$TARGET_ROOT"
 rm -rf "$TARGET_DIR"
-cp -R "$SOURCE_DIR" "$TARGET_DIR"
+mkdir -p "$TARGET_DIR"
+cp "$SOURCE_DIR/pet.json" "$TARGET_DIR/pet.json"
+cp "$SOURCE_DIR/spritesheet.webp" "$TARGET_DIR/spritesheet.webp"
 
-echo "Installed Joel-y from '$REF' to $TARGET_DIR"
+echo "Installed Joel-y release '$RELEASE_ID' from '$REF' to $TARGET_DIR"
 echo "Restart Codex if Joel-y does not refresh immediately."

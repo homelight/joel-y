@@ -1,0 +1,11 @@
+{
+  "id": "baseline",
+  "displayName": "Joel-y Baseline",
+  "description": "Original Joel-y in the tan plaid overshirt.",
+  "createdAt": "2026-06-25",
+  "petJson": "pet.json",
+  "spritesheet": "spritesheet.webp",
+  "contactSheet": "contact-sheet.png",
+  "sourceVariant": null,
+  "tags": ["baseline", "original"]
+}

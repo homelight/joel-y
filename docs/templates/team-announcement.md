@@ -13,7 +13,14 @@ Update locally:
 ```bash
 cd joel-y
 git pull
-./scripts/install-or-update.sh
+./scripts/install-or-update.sh --latest
+```
+
+Pick a specific Joel-y:
+
+```bash
+./scripts/install-or-update.sh --list
+./scripts/install-or-update.sh --release <release-id>
 ```
 
 If Joel-y does not refresh immediately, restart Codex.

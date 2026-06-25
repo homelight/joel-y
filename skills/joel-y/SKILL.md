@@ -17,7 +17,14 @@ From any checkout of `homelight/joel-y`:
 ./skills/joel-y/scripts/update-joel-y.sh --latest
 ```
 
-Install a specific release, tag, branch, or commit:
+Install a specific versioned release:
+
+```bash
+./skills/joel-y/scripts/update-joel-y.sh --release golf-2026-06-25
+./skills/joel-y/scripts/update-joel-y.sh --release baseline
+```
+
+Install the latest release from a specific git tag, branch, or commit:
 
 ```bash
 ./skills/joel-y/scripts/update-joel-y.sh --ref <release-tag-or-sha>
@@ -40,12 +47,13 @@ Show the installed pet metadata:
 1. If the user has a local `homelight/joel-y` checkout, run commands from that repo.
 2. If the user does not have a checkout, use the script's `--repo-dir <path>` option or let it clone into `${CODEX_HOME:-$HOME/.codex}/joel-y-repo`.
 3. Use `--latest` for the current `main`.
-4. Use `--ref <tag|branch|sha>` when the user asks for a specific outfit, vibe, or release.
-5. After install, tell the user to restart Codex if Joel-y does not refresh immediately.
+4. Use `--release <id>` when the user asks for a specific outfit, vibe, or version listed in `releases/index.json`.
+5. Use `--ref <tag|branch|sha>` only when the user asks for a specific git ref.
+6. After install, tell the user to restart Codex if Joel-y does not refresh immediately.
 
 ## Release Expectations
 
-Released Joel-y variants must include an updated `pet/joel-y/spritesheet.webp`. Do not describe a source-only variant under `source/variants/` as installable unless the active spritesheet was regenerated for that release.
+Released Joel-y variants must include a complete immutable release package under `releases/<release-id>/` with `pet.json`, `spritesheet.webp`, `contact-sheet.png`, and `release.json`. Do not describe a source-only variant under `source/variants/` as installable unless a full release package exists.
 
 If a user wants a source-only variant made active, create a normal PR that regenerates the full pet package first. Do not push directly to `main`.
 

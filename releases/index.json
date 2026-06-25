@@ -1,0 +1,21 @@
+{
+  "latest": "golf-2026-06-25",
+  "releases": [
+    {
+      "id": "golf-2026-06-25",
+      "displayName": "Joel-y Golf",
+      "description": "Joel-y in a clean golf outfit.",
+      "createdAt": "2026-06-25",
+      "path": "releases/golf-2026-06-25",
+      "tags": ["golf", "outfit", "active"]
+    },
+    {
+      "id": "baseline",
+      "displayName": "Joel-y Baseline",
+      "description": "Original Joel-y in the tan plaid overshirt.",
+      "createdAt": "2026-06-25",
+      "path": "releases/baseline",
+      "tags": ["baseline", "original"]
+    }
+  ]
+}
