@@ -6,11 +6,12 @@ Joel-y is a Codex custom pet asset package.
 
 The repo keeps the installable Codex pet files alongside source PNG frames and reference artifacts so Joel-y can be updated over time with new primitives, outfits, expressions, and places.
 
-## Latest Variant
+## Active Pet
 
 <img src="source/variants/golf/joel-y-golf-transparent.png" alt="Joel-y golf outfit" width="220">
 
-- Golf outfit source: `source/variants/golf/joel-y-golf-transparent.png`
+- Active installable pet: `pet/joel-y/spritesheet.webp`
+- Every outfit, place, or primitive variant must regenerate the active spritesheet before release.
 - Release notes: `docs/releases/2026-06-25-golf-outfit.md`
 
 ## Install Or Update
@@ -61,12 +62,14 @@ Restart Codex if the pet does not appear immediately.
 
 When adding new primitives, outfits, or places:
 
-1. Add or update source frames under `source/pngs/`.
+1. Add or update source frames under `source/pngs/` or `source/variants/`.
 2. Add a short note under `docs/variants.md`.
-3. Regenerate `pet/joel-y/spritesheet.webp` and update `pet/joel-y/pet.json` if states or atlas dimensions change.
+3. Regenerate `pet/joel-y/spritesheet.webp`; this is required for every released variant.
 4. Refresh `artifacts/contact-sheet.png` for review.
 5. Update `CHANGELOG.md`.
-6. Commit the source frames, generated pet files, and review artifact together.
-7. Send the team an update using `docs/templates/team-announcement.md`.
+6. Run `scripts/verify-release.sh origin/main`.
+7. Commit the source frames, generated pet files, and review artifact together.
+8. Open a PR; do not push directly to `main`.
+9. Send the team an update using `docs/templates/team-announcement.md` after merge.
 
 For a step-by-step publishing flow, use `docs/release-checklist.md`.
