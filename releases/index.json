@@ -1,13 +1,21 @@
 {
-  "latest": "golf-2026-06-25",
+  "latest": "golf-with-club-2026-06-25",
   "releases": [
+    {
+      "id": "golf-with-club-2026-06-25",
+      "displayName": "Joel-y Golf With Club",
+      "description": "Joel-y in full golf gear with a readable golf club prop.",
+      "createdAt": "2026-06-25",
+      "path": "releases/golf-with-club-2026-06-25",
+      "tags": ["golf", "club", "outfit", "active"]
+    },
     {
       "id": "golf-2026-06-25",
       "displayName": "Joel-y Golf",
       "description": "Joel-y in a clean golf outfit.",
       "createdAt": "2026-06-25",
       "path": "releases/golf-2026-06-25",
-      "tags": ["golf", "outfit", "active"]
+      "tags": ["golf", "outfit"]
     },
     {
       "id": "baseline",
