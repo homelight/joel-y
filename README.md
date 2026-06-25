@@ -1,5 +1,7 @@
 # Joel-y
 
+![Joel-y](source/pngs/joel-y-large-transparent.png)
+
 Joel-y is a Codex custom pet asset package.
 
 The repo keeps the installable Codex pet files alongside source PNG frames and reference artifacts so Joel-y can be updated over time with new primitives, outfits, expressions, and places.
