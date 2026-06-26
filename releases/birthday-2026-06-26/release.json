@@ -1,0 +1,17 @@
+{
+  "id": "birthday-2026-06-26",
+  "displayName": "Joel-y Birthday",
+  "description": "Joel-y celebrates his birthday in a Hawaiian shirt and birthday hat, with distinct source poses for idle, running, waving, jumping, failed, waiting, sprinting, and review primitives.",
+  "createdAt": "2026-06-26",
+  "petJson": "pet.json",
+  "spritesheet": "spritesheet.webp",
+  "contactSheet": "contact-sheet.png",
+  "sourceVariant": "source/variants/birthday/joel-y-birthday-pose-sheet.png",
+  "tags": [
+    "birthday",
+    "hawaiian-shirt",
+    "party-hat",
+    "outfit",
+    "active"
+  ]
+}
