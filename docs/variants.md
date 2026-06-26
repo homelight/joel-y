@@ -22,6 +22,15 @@ Use this file as the running index for future Joel-y updates.
 - Notes: Keeps Joel-y's blond hair, sunglasses, face, and sticker-like illustration style while swapping in a clean golf polo, vest, glove, golf shoes, and club.
 - Next step: Use this as the identity reference for a full golf-course or golf-outfit animated atlas if we want Codex to run the golf Joel-y variant as the active pet.
 
+## Birthday
+
+- Date: 2026-06-26
+- Source: `source/variants/birthday/joel-y-birthday-pose-sheet.png`
+- Idle source: `source/variants/birthday/joel-y-birthday-transparent.png`
+- Raw chroma source: `source/variants/birthday/joel-y-birthday-chroma.png`
+- Release: `birthday-2026-06-26`
+- Notes: New standalone Joel-y birthday artwork with a turquoise Hawaiian shirt, floral print, sunglasses, white sneakers, and birthday hat. This variant uses distinct source poses for the idle, running, waving, jumping, failed, waiting, sprinting, and review primitives rather than repeating a single standing pose.
+
 ## Variant Checklist
 
 - Keep the recognizable Joel-y silhouette consistent.

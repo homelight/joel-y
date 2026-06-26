@@ -1,6 +1,14 @@
 {
-  "latest": "golf-with-club-2026-06-25",
+  "latest": "birthday-2026-06-26",
   "releases": [
+    {
+      "id": "birthday-2026-06-26",
+      "displayName": "Joel-y Birthday",
+      "description": "Joel-y celebrates his birthday in a Hawaiian shirt and birthday hat.",
+      "createdAt": "2026-06-26",
+      "path": "releases/birthday-2026-06-26",
+      "tags": ["birthday", "hawaiian-shirt", "party-hat", "outfit", "active"]
+    },
     {
       "id": "golf-with-club-2026-06-25",
       "displayName": "Joel-y Golf With Club",
