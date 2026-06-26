@@ -8,11 +8,11 @@ The repo keeps the installable Codex pet files alongside source PNG frames and r
 
 ## Active Pet
 
-<img src="source/variants/golf/joel-y-golf-transparent.png" alt="Joel-y golf outfit" width="220">
+<img src="source/variants/birthday/joel-y-birthday-transparent.png" alt="Joel-y birthday outfit" width="220">
 
-- Active installable pet: golf outfit Joel-y in `pet/joel-y/spritesheet.webp`
+- Active installable pet: birthday Joel-y in `pet/joel-y/spritesheet.webp`
 - Every outfit, place, or primitive variant must regenerate the active spritesheet before release.
-- Release notes: `docs/releases/2026-06-25-golf-outfit.md`
+- Release notes: `docs/releases/2026-06-26-birthday.md`
 
 ## Install Or Update
 
@@ -45,6 +45,7 @@ List and install a specific local Joel-y release:
 
 ```bash
 ./scripts/install-or-update.sh --list
+./scripts/install-or-update.sh --release birthday-2026-06-26
 ./scripts/install-or-update.sh --release baseline
 ./scripts/install-or-update.sh --release golf-2026-06-25
 ```
