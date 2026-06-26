@@ -1,13 +1,31 @@
 {
-  "latest": "golf-with-club-2026-06-25",
+  "latest": "birthday-30",
   "releases": [
+    {
+      "id": "birthday-30",
+      "displayName": "Birthday Aloha Joel-y",
+      "description": "Joel-y in a bright Hawaiian shirt with oversized flowers and a readable birthday party hat.",
+      "createdAt": "2026-06-26",
+      "path": "releases/birthday-30",
+      "tags": [
+        "birthday",
+        "aloha",
+        "hawaiian-shirt",
+        "party-hat",
+        "active"
+      ]
+    },
     {
       "id": "golf-with-club-2026-06-25",
       "displayName": "Joel-y Golf With Club",
       "description": "Joel-y in full golf gear with a readable golf club prop.",
       "createdAt": "2026-06-25",
       "path": "releases/golf-with-club-2026-06-25",
-      "tags": ["golf", "club", "outfit", "active"]
+      "tags": [
+        "golf",
+        "club",
+        "outfit"
+      ]
     },
     {
       "id": "golf-2026-06-25",
@@ -15,7 +33,10 @@
       "description": "Joel-y in a clean golf outfit.",
       "createdAt": "2026-06-25",
       "path": "releases/golf-2026-06-25",
-      "tags": ["golf", "outfit"]
+      "tags": [
+        "golf",
+        "outfit"
+      ]
     },
     {
       "id": "baseline",
@@ -23,7 +44,10 @@
       "description": "Original Joel-y in the tan plaid overshirt.",
       "createdAt": "2026-06-25",
       "path": "releases/baseline",
-      "tags": ["baseline", "original"]
+      "tags": [
+        "baseline",
+        "original"
+      ]
     }
   ]
 }

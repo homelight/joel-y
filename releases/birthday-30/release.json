@@ -1,0 +1,17 @@
+{
+  "id": "birthday-30",
+  "displayName": "Birthday Aloha Joel-y",
+  "description": "Joel-y celebrates birthday week in a Hawaiian shirt with oversized flowers and a readable birthday party hat.",
+  "createdAt": "2026-06-26",
+  "petJson": "pet.json",
+  "spritesheet": "spritesheet.webp",
+  "contactSheet": "contact-sheet.png",
+  "sourceVariant": "source/variants/birthday-30/joel-y-birthday-30-chroma.png",
+  "tags": [
+    "birthday",
+    "aloha",
+    "hawaiian-shirt",
+    "party-hat",
+    "active"
+  ]
+}

@@ -14,6 +14,15 @@ Use this file as the running index for future Joel-y updates.
 - HomeLight-themed accessories.
 - Additional expressions and work states.
 
+## Birthday Aloha
+
+- Date: 2026-06-26
+- Release id: `birthday-30`
+- Source: `source/variants/birthday-30/joel-y-birthday-30-transparent.png`
+- Raw chroma source: `source/variants/birthday-30/joel-y-birthday-30-chroma.png`
+- Notes: Birthday-week Joel-y keeps the recognizable blond hair, sunglasses, face shape, and sticker-like style while adding a bright teal Hawaiian shirt with oversized flower shapes and a readable cone party hat.
+- Visual acceptance: The Hawaiian shirt, large floral shirt shapes, and birthday party hat must remain visible in `pet/joel-y/spritesheet.webp` and `artifacts/contact-sheet.png`; tiny party props are intentionally omitted so the core cues stay readable at 192x208.
+
 ## Golf Outfit
 
 - Date: 2026-06-25
