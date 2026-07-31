@@ -1,6 +1,14 @@
 {
-  "latest": "birthday-2026-06-26",
+  "latest": "big-apple-vacation",
   "releases": [
+    {
+      "id": "big-apple-vacation",
+      "displayName": "Joel-y Big Apple Vacation",
+      "description": "Joel-y spends a city week in New York with a navy jacket, clear looking directions, and a bright yellow taxi-shaped shoulder bag.",
+      "createdAt": "2026-07-31",
+      "path": "releases/big-apple-vacation",
+      "tags": ["nyc", "vacation", "yellow-taxi", "checker-stripe", "look-directions", "v2", "active"]
+    },
     {
       "id": "birthday-2026-06-26",
       "displayName": "Joel-y Birthday",
