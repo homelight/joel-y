@@ -1,0 +1,11 @@
+{
+  "id": "big-apple-vacation",
+  "displayName": "Joel-y Big Apple Vacation",
+  "description": "Joel-y spends a city week in New York with a navy jacket, clear looking directions, and a bright yellow taxi-shaped shoulder bag with a bold checker stripe.",
+  "createdAt": "2026-07-31",
+  "petJson": "pet.json",
+  "spritesheet": "spritesheet.webp",
+  "contactSheet": "contact-sheet.png",
+  "sourceVariant": "source/variants/big-apple-vacation/joel-y-big-apple-vacation-base-transparent.png",
+  "tags": ["nyc", "vacation", "yellow-taxi", "checker-stripe", "look-directions", "v2", "active"]
+}

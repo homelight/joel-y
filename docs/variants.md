@@ -14,6 +14,16 @@ Use this file as the running index for future Joel-y updates.
 - HomeLight-themed accessories.
 - Additional expressions and work states.
 
+## Big Apple Vacation
+
+- Date: 2026-07-31
+- Release: `big-apple-vacation`
+- Source: `source/variants/big-apple-vacation/joel-y-big-apple-vacation-base-transparent.png`
+- Raw chroma source: `source/variants/big-apple-vacation/joel-y-big-apple-vacation-base-chroma.png`
+- Notes: New York city-week variant with a navy jacket, clear eyes, a bright yellow taxi-shaped shoulder bag, and a bold checker stripe. The v2 atlas includes the nine standard states plus 16 looking directions.
+- Visual acceptance: the taxi bag and checker stripe must be visibly attached and readable in the generated spritesheet and contact sheet; the navy jacket and clear eyes must remain present; `000` is up, `090` is screen-right, `180` is down, and `270` is screen-left. No text, logos, skyline, or scenery are required.
+- QA: `artifacts/contact-sheet.png` and `artifacts/big-apple-vacation-look-directions.png` were visually reviewed; independent blind direction review passed the cardinal gates and all 16 semantics were resolved as pass.
+
 ## Golf Outfit
 
 - Date: 2026-06-25
