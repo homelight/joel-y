@@ -1,0 +1,54 @@
+{
+  "reviewer": "parent incremental review",
+  "directions": {
+    "180": {
+      "verdict": "pass",
+      "expected": "down",
+      "observed": "down",
+      "reason": "Frontal tucked chin and downward pupils."
+    },
+    "202.5": {
+      "verdict": "pass",
+      "expected": "down-left",
+      "observed": "down-left",
+      "reason": "Lowered chin and nose slightly left."
+    },
+    "225": {
+      "verdict": "warning",
+      "expected": "down-left",
+      "observed": "down-left",
+      "reason": "Lowered left-facing head."
+    },
+    "247.5": {
+      "verdict": "warning",
+      "expected": "down-left",
+      "observed": "down-left",
+      "reason": "Left nose with downward eye line."
+    },
+    "270": {
+      "verdict": "pass",
+      "expected": "left",
+      "observed": "left",
+      "reason": "Nose and pupils point left at level pitch."
+    },
+    "292.5": {
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "up-left",
+      "reason": "Raised chin and left nose."
+    },
+    "315": {
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "up-left",
+      "reason": "Left head turn and raised pupils."
+    },
+    "337.5": {
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "up-left",
+      "reason": "Face angles up and left."
+    }
+  },
+  "continuity": "Stable lower-body registration; adjacent left diagonals similar; boundary transitions marked for final review."
+}

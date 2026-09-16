@@ -1,0 +1,54 @@
+{
+  "reviewer": "parent incremental review",
+  "directions": {
+    "000": {
+      "verdict": "pass",
+      "expected": "up",
+      "observed": "up",
+      "reason": "Raised chin, upper pupils, frontal nose."
+    },
+    "022.5": {
+      "verdict": "pass",
+      "expected": "up-right",
+      "observed": "up-right",
+      "reason": "Raised chin and pupils with nose shifted right."
+    },
+    "045": {
+      "verdict": "warning",
+      "expected": "up-right",
+      "observed": "up-right",
+      "reason": "Right head turn and raised pupils."
+    },
+    "067.5": {
+      "verdict": "warning",
+      "expected": "up-right",
+      "observed": "up-right",
+      "reason": "Right nose direction with slightly raised gaze."
+    },
+    "090": {
+      "verdict": "pass",
+      "expected": "right",
+      "observed": "right",
+      "reason": "Nose and pupils point screen-right at level pitch."
+    },
+    "112.5": {
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "reason": "Right nose and lowered pupils."
+    },
+    "135": {
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "reason": "Head pitches down and nose points right."
+    },
+    "157.5": {
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "down-right",
+      "reason": "Tucked chin and lowered rightward face."
+    }
+  },
+  "continuity": "Stable feet and scale; neighboring upper-right poses similar, no visible reversal."
+}

@@ -14,6 +14,16 @@ Use this file as the running index for future Joel-y updates.
 - HomeLight-themed accessories.
 - Additional expressions and work states.
 
+## Surfer — fresh rebuild
+
+- Date: 2026-09-16
+- Release: `surfer-2026-09-16`
+- Source and build notes: `source/variants/surfer-2026-09-16/`
+- Teal rash guard, coral shorts, expressive blue eyes, and yellow surfboard with attached blue wave.
+- Full v2 package with nine animation states and sixteen clockwise looking directions; magenta background extraction preserves the teal/blue palette.
+- Atlas and blind direction validation passed. Independent visual review accepted intermediate-angle and continuity warnings; live playback was not verified.
+- Release notes: `docs/releases/2026-09-16-surfer.md`.
+
 ## Big Apple Vacation
 
 - Date: 2026-07-31

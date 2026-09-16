@@ -8,11 +8,11 @@ The repo keeps the installable Codex pet files alongside source PNG frames and r
 
 ## Active Pet
 
-<img src="source/variants/big-apple-vacation/joel-y-big-apple-vacation-base-transparent.png" alt="Joel-y Big Apple Vacation outfit" width="220">
+<img src="source/variants/surfer-2026-09-16/preview.png" alt="Joel-y surfer outfit" width="220">
 
-- Active installable pet: Big Apple Vacation Joel-y in `pet/joel-y/spritesheet.webp`
+- Active installable pet: Surfer Joel-y in `pet/joel-y/spritesheet.webp`
 - Every outfit, place, or primitive variant must regenerate the active spritesheet before release.
-- Release notes: `docs/releases/2026-07-31-big-apple-vacation.md`
+- Release notes: `docs/releases/2026-09-16-surfer.md`
 
 ## Install Or Update
 

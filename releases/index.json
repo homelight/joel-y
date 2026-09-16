@@ -1,13 +1,38 @@
 {
-  "latest": "big-apple-vacation",
+  "latest": "surfer-2026-09-16",
   "releases": [
+    {
+      "id": "surfer-2026-09-16",
+      "displayName": "Joel-y Surfer",
+      "description": "Joel-y catches a beach break in a teal rash guard and coral shorts, carrying a yellow surfboard with an attached blue wave.",
+      "createdAt": "2026-09-16",
+      "path": "releases/surfer-2026-09-16",
+      "tags": [
+        "surfer",
+        "beach",
+        "teal",
+        "yellow-surfboard",
+        "blue-wave",
+        "look-directions",
+        "v2",
+        "active"
+      ]
+    },
     {
       "id": "big-apple-vacation",
       "displayName": "Joel-y Big Apple Vacation",
       "description": "Joel-y spends a city week in New York with a navy jacket, clear looking directions, and a bright yellow taxi-shaped shoulder bag.",
       "createdAt": "2026-07-31",
       "path": "releases/big-apple-vacation",
-      "tags": ["nyc", "vacation", "yellow-taxi", "checker-stripe", "look-directions", "v2", "active"]
+      "tags": [
+        "nyc",
+        "vacation",
+        "yellow-taxi",
+        "checker-stripe",
+        "look-directions",
+        "v2",
+        "active"
+      ]
     },
     {
       "id": "birthday-2026-06-26",
@@ -15,7 +40,13 @@
       "description": "Joel-y celebrates his birthday in a Hawaiian shirt and birthday hat.",
       "createdAt": "2026-06-26",
       "path": "releases/birthday-2026-06-26",
-      "tags": ["birthday", "hawaiian-shirt", "party-hat", "outfit", "active"]
+      "tags": [
+        "birthday",
+        "hawaiian-shirt",
+        "party-hat",
+        "outfit",
+        "active"
+      ]
     },
     {
       "id": "golf-with-club-2026-06-25",
@@ -23,7 +54,12 @@
       "description": "Joel-y in full golf gear with a readable golf club prop.",
       "createdAt": "2026-06-25",
       "path": "releases/golf-with-club-2026-06-25",
-      "tags": ["golf", "club", "outfit", "active"]
+      "tags": [
+        "golf",
+        "club",
+        "outfit",
+        "active"
+      ]
     },
     {
       "id": "golf-2026-06-25",
@@ -31,7 +67,10 @@
       "description": "Joel-y in a clean golf outfit.",
       "createdAt": "2026-06-25",
       "path": "releases/golf-2026-06-25",
-      "tags": ["golf", "outfit"]
+      "tags": [
+        "golf",
+        "outfit"
+      ]
     },
     {
       "id": "baseline",
@@ -39,7 +78,10 @@
       "description": "Original Joel-y in the tan plaid overshirt.",
       "createdAt": "2026-06-25",
       "path": "releases/baseline",
-      "tags": ["baseline", "original"]
+      "tags": [
+        "baseline",
+        "original"
+      ]
     }
   ]
 }

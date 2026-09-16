@@ -1,0 +1,76 @@
+{
+  "ok": true,
+  "verdict": "pass",
+  "reviewer": "blind-a / subsequent independent labeled visual review",
+  "method": "Viewed full extended contact sheet, native 192x208 direction tiles, and an all-frame temporal contact montage extracted from refreshed preview GIFs. No real-time playback inspected.",
+  "rows": {
+    "idle": {
+      "verdict": "pass",
+      "evidence": "Stable planted stance with blink, head tilt, eye movement, and modest breathing changes; board remains gripped."
+    },
+    "running-right": {
+      "verdict": "pass",
+      "evidence": "Right-facing nose and advancing rightward stride silhouettes; alternating bent and extended legs, arm pump, and board carried at torso. No conspicuous scale jump."
+    },
+    "running-left": {
+      "verdict": "pass",
+      "evidence": "Left-facing counterpart with alternating leg phases and arm pump; board remains attached to carrying arm. No conspicuous scale jump."
+    },
+    "waving": {
+      "verdict": "pass",
+      "evidence": "Free arm raises, hand changes wave pose, then returns to hip; holding hand stays on board."
+    },
+    "jumping": {
+      "verdict": "pass",
+      "evidence": "Crouch, ascent, tucked airborne apex, descent, planted recovery; head and board proportions remain coherent through pose changes."
+    },
+    "failed": {
+      "verdict": "pass",
+      "evidence": "Concerned brows, drooping posture, lowered gaze, and recovery read as disappointment."
+    },
+    "waiting": {
+      "verdict": "pass",
+      "evidence": "Palm-up, chin-touch and head-scratch gestures convey waiting with distinct facial variation."
+    },
+    "running": {
+      "verdict": "pass",
+      "evidence": "Stationary thinking/working gestures: temple touch, chin touch, idea finger and contemplative eyes. This is a busy/processing state, not a locomotion gait."
+    },
+    "review": {
+      "verdict": "pass",
+      "evidence": "Board inspection, chin touch, approving gesture and settled smile read as reviewing."
+    }
+  },
+  "identity": {
+    "verdict": "pass",
+    "evidence": "Consistent blond hair, blue eyes, teal shirt, orange shorts, bare feet and yellow board with blue wave graphic across rows."
+  },
+  "boardAttachment": {
+    "verdict": "pass",
+    "evidence": "Board remains in hand or tucked under arm; jump board rises with body. No detached prop observed."
+  },
+  "scalePopping": {
+    "verdict": "pass",
+    "evidence": "No conspicuous character resizing across neighboring frames; changes correspond to crouch, leg extension, head turn and jump height."
+  },
+  "directions": {
+    "verdict": "pass",
+    "cardinals": "All four legible; no wrong quadrant or conspicuous reversal among sixteen directions.",
+    "detailFile": "direction-semantics.json"
+  },
+  "continuity": {
+    "verdict": "warning",
+    "evidence": "Body, feet, and board anchors remain visually stable. Reported transparent spans at y=197..201 coincide with negative space between separated feet near the bottom, not visible interior body punctures. The 157.5->180 and 337.5->000 transitions have larger head-turn changes as reported; no quadrant reversal, detached neck or torso seam observed."
+  },
+  "chroma": {
+    "verdict": "pass",
+    "evidence": "Validation reports zero opaque chroma and fringe pixels, zero transparent RGB residue, and no errors or warnings. Despill reports ok and preserved alpha. No chroma retry performed."
+  },
+  "limitations": [
+    "Intermediate 22.5-degree steps are not uniformly distinct at pet size; details recorded as direction warnings.",
+    "Temporal montage verifies pose sequence, not real-time cadence, easing or perceived loop smoothness.",
+    "GIF previews show stippled outline artifacts from palette/transparency conversion; final atlas contact sheet is the source for edge-quality assessment.",
+    "Running without a directional suffix is interpreted as busy/processing, matching its stationary thinking poses."
+  ],
+  "assetsEdited": false
+}
