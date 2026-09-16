@@ -1,6 +1,14 @@
 {
-  "latest": "big-apple-vacation",
+  "latest": "surfer-2026-09-15",
   "releases": [
+    {
+      "id": "surfer-2026-09-15",
+      "displayName": "Joel-y Surfer",
+      "description": "Joel-y surfing in a teal rash guard and coral board shorts with a readable yellow surfboard and attached blue wave stripe.",
+      "createdAt": "2026-09-15",
+      "path": "releases/surfer-2026-09-15",
+      "tags": ["surfer", "surfboard", "wave", "outfit", "active", "v2"]
+    },
     {
       "id": "big-apple-vacation",
       "displayName": "Joel-y Big Apple Vacation",
