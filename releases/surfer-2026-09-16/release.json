@@ -1,0 +1,22 @@
+{
+  "id": "surfer-2026-09-16",
+  "displayName": "Joel-y Surfer",
+  "description": "Joel-y catches a beach break in a teal rash guard and coral shorts, carrying a yellow surfboard with an attached blue wave.",
+  "createdAt": "2026-09-16",
+  "petJson": "pet.json",
+  "spritesheet": "spritesheet.webp",
+  "contactSheet": "contact-sheet.png",
+  "sourceVariant": "source/variants/surfer-2026-09-16/base.png",
+  "tags": [
+    "surfer",
+    "beach",
+    "teal",
+    "yellow-surfboard",
+    "blue-wave",
+    "look-directions",
+    "v2"
+  ],
+  "sha256": "e5418940e3dc59dacee8c4dbfbd51d66b1149cca75e4ce24fb7e6fdebf0b4f8f",
+  "validation": "qa/atlas-validation.json",
+  "visualReview": "qa/final-visual-review.json"
+}

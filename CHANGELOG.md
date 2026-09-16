@@ -4,9 +4,11 @@ All notable Joel-y updates should be recorded here.
 
 ## Unreleased
 
-- Added the Big Apple Vacation Joel-y v2 release with 16 explicit looking directions.
-- Added the New York-inspired navy jacket and bright yellow taxi-shaped shoulder bag with a readable checker stripe.
-- Regenerated `pet/joel-y/spritesheet.webp` and `artifacts/contact-sheet.png`; Big Apple Vacation is now the active latest release.
+- Rebuilt Surfer Joel-y from fresh high-resolution artwork after the previous surfer release was rolled back.
+- Added the full v2 atlas, nine animation states, 16 look directions, and attached yellow surfboard with blue wave.
+- Used magenta extraction to preserve teal clothing and blue details.
+- Added immutable release surfer-2026-09-16, source strips, motion previews, and independent QA reports.
+- Surfer becomes the branch's active package; main changes only after this PR is merged.
 
 ## 2026-07-31 Big Apple Vacation
 

@@ -1,0 +1,2 @@
+# Surfer Joel-y look mechanics
+Head yaw and pitch plus pupils show the screen-coordinate target. Up lifts chin and pupils; down tucks chin and drops pupils; right rotates nose to screen-right; left rotates nose to screen-left. Diagonals combine yaw and pitch in even clockwise steps. Feet remain planted, lower body stays registered, shoulders turn gently and held board follows hand without detachment. Preserve face shape and large blue eyes. Never rotate the whole sprite. Board remains full-length with attached blue wave. Magenta key is separate from foreground.
