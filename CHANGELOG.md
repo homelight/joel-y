@@ -15,22 +15,12 @@ All notable Joel-y updates should be recorded here.
 - Added a focused look-direction review artifact at `artifacts/big-apple-vacation-look-directions.png`.
 - Verified that the named taxi bag, checker stripe, navy jacket, clear eyes, and all 16 looking directions survive into the final atlas and contact sheet.
 
-- Added the Joel-y surfer variant as a full v2 installable release.
-- Added surfer source artwork under `source/variants/surfer/`.
-- Regenerated `pet/joel-y/spritesheet.webp` as a validated 8x11 look-direction atlas.
-- Refreshed `artifacts/contact-sheet.png` for the surfer release.
+## 2026-06-26 Birthday
+
 - Added the Joel-y birthday variant as a full installable release.
 - Added standalone birthday source artwork under `source/variants/birthday/`.
 - Regenerated `pet/joel-y/spritesheet.webp` so the birthday outfit is now the active installable Joel-y pet.
 - Refreshed `artifacts/contact-sheet.png` for review.
-
-## 2026-09-15 Surfer
-
-- Added Joel-y surfing in a teal rash guard, coral board shorts, and a readable yellow surfboard with attached wave detail.
-- Added `surfer-2026-09-15` to the immutable release package index.
-- Upgraded the active atlas to sprite version 2 with 16 validated look directions.
-
-## 2026-06-26 Birthday
 
 - Added Joel-y in a turquoise Hawaiian shirt and birthday hat.
 - Added `birthday-2026-06-26` to the immutable release package index.
