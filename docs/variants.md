@@ -41,6 +41,14 @@ Use this file as the running index for future Joel-y updates.
 - Release: `birthday-2026-06-26`
 - Notes: New standalone Joel-y birthday artwork with a turquoise Hawaiian shirt, floral print, sunglasses, white sneakers, and birthday hat. This variant uses distinct source poses for the idle, running, waving, jumping, failed, waiting, sprinting, and review primitives rather than repeating a single standing pose.
 
+## Surfer
+
+- Date: 2026-09-15
+- Source: `source/variants/surfer/joel-y-surfer-transparent.png`
+- Raw chroma source: `source/variants/surfer/joel-y-surfer-chroma.png`
+- Release: `surfer-2026-09-15`
+- Notes: Approved surfer variant with clear eyes, teal rash guard, coral board shorts, a rigid yellow surfboard, and an attached blue wave stripe with white foam. Ships as a v2 8x11 atlas with 16 readable look directions.
+
 ## Variant Checklist
 
 - Keep the recognizable Joel-y silhouette consistent.
